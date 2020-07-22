@@ -1,0 +1,21 @@
+package com.info.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.info.domain.Project;
+import com.info.repository.ProjectRepository;
+
+@Service
+public class ProjectService {
+
+	@Autowired
+	private ProjectRepository projectRepository;
+	
+	public Project saveOrUpdateProject(Project project) {
+		
+		// logic 
+		
+		return projectRepository.save(project);
+	}
+}

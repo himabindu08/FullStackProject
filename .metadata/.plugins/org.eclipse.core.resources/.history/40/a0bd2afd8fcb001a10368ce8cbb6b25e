@@ -1,0 +1,5 @@
+package com.info.exceptions;
+
+public class CustomResponseEntityExceptionHandler {
+
+}
